@@ -1,0 +1,160 @@
+*{
+    font-size: medium;
+box-sizing: border-box;
+text-decoration: none;
+/* list-style: none; */
+list-style: ;
+}
+
+/*------------Definici�n columnas: dividir viewport responsive-----------------*/
+/*Establecer las clases columnas para poder dividir*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/*Hacer floats en las columnas para que se situen al lado unas de otras*/
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+/*Eliminar el float despues de cada fila*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*Hacerlo adaptado a dispositivos peque�os: pantallas de 768px*/
+@media only screen and (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+/*--------------------------------------------------------------------------------*/
+
+body{
+    background-color: white;
+}
+
+
+/*----------PARTE SUPERIOR---------*/
+.top{
+    background-color: #484f4f;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    margin: 2px;
+
+}
+
+
+/*---------------------------------*/
+
+
+/*----------CUERPO CENTRAL---------*/
+.main_body{
+    border: 2px solid black; /*Mostrar bordes*/
+    background-color: #fff2df;
+    box-sizing: border-box;
+    width: auto;
+    height: 600px;
+    margin: 2px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.main_body > .column_left{
+    border: 2px solid black; /*Mostrar bordes*/
+    box-sizing: border-box;
+    height: 90%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu_juegos{
+    border: 2px solid black; /*Mostrar bordes*/
+    box-sizing: border-box;
+
+    text-align: center;
+}
+
+.menu_juegos > li{
+    border: 2px solid black; /*Mostrar bordes*/
+    box-sizing: border-box;
+
+    text-align: center;
+}
+
+.main_body > .column_center{
+    border: 2px solid black; /*Mostrar bordes*/
+    box-sizing: border-box;
+    height: 90%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main_body > .column_right{
+    border: 2px solid black; /*Mostrar bordes*/
+    box-sizing: border-box;
+    height: 90%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*---------------------------------*/
+
+
+/*----------PIE DE PAGINA---------*/
+.footer{
+    border: 2px solid black; /*Mostrar bordes*/
+    background-color: #b2c2bf;
+    box-sizing: border-box;
+    width: auto;
+    height: 100px;
+    margin: 2px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.footer > .footer_col_left{
+    border: 2px solid black; /*Mostrar bordes*/
+    box-sizing: border-box;
+    height: 90%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer > .footer_col_center{
+    border: 2px solid black; /*Mostrar bordes*/
+    box-sizing: border-box;
+    height: 90%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer > .footer_col_right{
+    border: 2px solid black; /*Mostrar bordes*/
+    box-sizing: border-box;
+    height: 90%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*---------------------------------*/
