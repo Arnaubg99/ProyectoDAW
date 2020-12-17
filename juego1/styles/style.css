@@ -1,0 +1,91 @@
+*{
+    list-style: none;
+}
+
+.navbar{
+    height: 3vw;
+    animation-duration: 2s;
+}
+
+.main_navbar{
+    border-bottom: solid 2px #2196f3;
+}
+
+body{
+    background-image: url("../images/barcelona_mercat_principal_edit.jpg"); 
+    width: auto;
+    height: auto;
+    background-color: #cccccc;
+
+}
+
+main{
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    font-family: '8-bit';
+}
+
+.main_1{
+    box-sizing: border-box;
+    width: 100%;/*juego*/
+    background-color: blanchedalmond;
+    border: solid 4px #2196f3;
+    opacity: 1;
+    padding: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    background-image: url("../images/Captura3.jpg"); /*juego*/
+    background-size: 100% 100%; /*juego*/
+    background-repeat: no-repeat; /*juego*/
+
+}
+
+.main_1 > p {
+    opacity: 1;
+    color: black;
+}
+
+.cuadricula{
+    width: 200px;
+    height: 400px;
+    background-color:black;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+
+}
+
+.cuadricula div{
+    width: 20px;
+    height: 20px;
+}
+
+.pieza{
+    background-color: blue;
+    background-image: url("../images/caja.png");
+    background-size: cover;
+    
+}
+
+h2{
+    text-align: center;
+    margin-top: 2%;
+}
+
+@font-face{
+    font-family: '8-bit';
+        src: url('../8-bit/8-bit-hud.eot');
+        src: url('../8-bit/8-bit-hud.eot') format('embedded-opentype'),
+             url('../8-bit/8-bit-hud.woff') format('woff'),
+             url('../8-bit/8-bit-hud.ttf') format('truetype'),
+             url('../8-bit/8-bit-hud.svg') format('svg');
+    font-weight: unset;
+    font-style: unset;
+}
+
