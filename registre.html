@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercats BCN</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/(materia)bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/styles_propios_main.css">
+</head>
+<body>
+    <div class="main_body">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark main_navbar">
+            <a class="navbar-brand" href="./landing.html">Mercats de Barcelona</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" id="navbarColor01">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Usuari
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./usuari.html">Log in</a>
+                            <a class="dropdown-item" href="./registre.html">Registre</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <main>
+        <div class="formulario">
+            <div class="card">
+                <div class="card-body">
+                    <form action="tabla.php" method="POST" enctype="multipart/form-data">
+
+                        <div class="form-group row">
+                            <label for="nom" class="col-sm-4 col-form-label">Nom d'usuari</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" name="nom" id="nom" placeholder="Nom d'usuari" min="5" required>
+                            </div>
+                        </div>
+                        
+
+                        <div class="form-group row">
+                            <label for="contrasenya" class="col-sm-4 col-form-label">Contrasenya</label>
+                            <div class="col-sm-6">
+                                <input type="password" class="form-control" name="contrasenya" id="contrasenya" placeholder="Contrasenya de l'usuari" min="5" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="email" class="col-sm-4 col-form-label">Email</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" name="email" id="email" placeholder="example@gmail.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label type="checkbox" class="col-sm-4 col-form-label" for="mercat" id="mercat">Mercats al teu voltant</label>
+                            <div class="col-sm-7">
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="abaceria_central" value="Abaceria_Central">
+                                    <label class="custom-control-label" for="abaceria">Mercat de l'Abaceria Central</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="besos" value="Besos">
+                                    <label class="custom-control-label" for="besos">Mercat del Besòs</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="boqueria" value="Boqueria">
+                                    <label class="custom-control-label" for="boqueria">Mercat de la Boqueria</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="carmel" value="Carmel">
+                                    <label class="custom-control-label" for="carmel">Mercat del Carmel</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="clot" value="Clot">
+                                    <label class="custom-control-label" for="clot">Mercat del Clot</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="estrella" value="Estrella">
+                                    <label class="custom-control-label" for="estrella">Mercat de l'Estrella</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="fort_pienc" value="Fort_Pienc">
+                                    <label class="custom-control-label" for="fort_pienc">Mercat de Fort Pienc</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="guinardo" value="Ginardo">
+                                    <label class="custom-control-label" for="ginardo">Mercat del Guinardó</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="horta" value="Horta">
+                                    <label class="custom-control-label" for="horta">Mercat d'Horta</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="llibertat" value="Llibertat">
+                                    <label class="custom-control-label" for="llibertat">Mercat de la Llibertat</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="merce" value="Merce">
+                                    <label class="custom-control-label" for="merce">Mercat de la Mercè</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="montserrat" value="Montserrat">
+                                    <label class="custom-control-label" for="montserrat">Mercat de Montserrat</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="poblenou" value="Poblenou">
+                                    <label class="custom-control-label" for="poblenou">Mercat de Poblenou</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="sant_andreu" value="Sant_Andreu">
+                                    <label class="custom-control-label" for="sant_andreu">Mercat de Sant Andreu</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="sant_antoni" value="Sant_Antoni">
+                                    <label class="custom-control-label" for="sant_antoni">Mercat de Sant Antoni</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="sant_marti" value="Sant_Marti">
+                                    <label class="custom-control-label" for="sant_marti">Mercat de Sant Martí</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="santa_caterina" value="Santa_Caterina">
+                                    <label class="custom-control-label" for="santa_caterina">Mercat de Santa Caterina</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="trinitat" value="Trinitat">
+                                    <label class="custom-control-label" for="trinitat">Mercat de la Trinitat</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="tres_torres" value="Tres_Torres">
+                                    <label class="custom-control-label" for="tres_torres">Mercat de Les Tres Torres</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="barceloneta" value="Barceloneta">
+                                    <label class="custom-control-label" for="barceloneta">Mercat de la Barceloneta</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="bon_pastor" value="Bon_Pastor">
+                                    <label class="custom-control-label" for="bon_pastor">Mercat del Bon Pastor</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="canyelles" value="Canyelles">
+                                    <label class="custom-control-label" for="canyelles">Mercat de Canyelles</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="ciutat_meridiana" value="Ciutat_Meridiana">
+                                    <label class="custom-control-label" for="ciutat_meridiana">Mercat de Ciutat Meridiana</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="concepcio" value="Concepcio">
+                                    <label class="custom-control-label" for="concepcio">Mercat de la Concepció</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="felipII" value="FelipII">
+                                    <label class="custom-control-label" for="felipII">Mercat de Felip II</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="galvany" value="Galvany">
+                                    <label class="custom-control-label" for="galvany">Mercat de Galvany</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="guineueta" value="Guineueta">
+                                    <label class="custom-control-label" for="guineueta">Mercat de la Guineueta</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="hostafrancs" value="Hostafrancs">
+                                    <label class="custom-control-label" for="hostafrancs">Mercat d'Hostafrancs</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="lesseps" value="Lesseps">
+                                    <label class="custom-control-label" for="lesseps">Mercat de Lesseps</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="marina" value="Marina">
+                                    <label class="custom-control-label" for="marina">Mercat de la Marina</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="ninot" value="Ninot">
+                                    <label class="custom-control-label" for="ninot">Mercat del Ninot</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="nuria" value="Nuria">
+                                    <label class="custom-control-label" for="nuria">Mercat de Núria</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="provençals" value="Provençals">
+                                    <label class="custom-control-label" for="provençals">Mercat de Provençals</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="sagrada_familia" value="Sagrada_Familia">
+                                    <label class="custom-control-label" for="sagrada_familia">Mercat de la Sagrada Familia</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="sant_gervasi" value="Sant_Gervasi">
+                                    <label class="custom-control-label" for="sant_gervasi">Mercat de Sant Gervasi</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="sants" value="Sants">
+                                    <label class="custom-control-label" for="sants">Mercat de Sants</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="sarria" value="Sarria">
+                                    <label class="custom-control-label" for="sarria">Mercat de Sarrià</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="teixonera" value="Teixonera">
+                                    <label class="custom-control-label" for="teixonera">Mercat de Vall d'Hebron - Teixonera</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="dominical_sant_antoni" value="dominical_sant_antoni">
+                                    <label class="custom-control-label" for="dominical_sant_antoni">Dominical de Sant Antoni</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="bellcaire" value="Bellcaire">
+                                    <label class="custom-control-label" for="bellcaire">Encants Barcelona - Fira de Bellcaire</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="encants_sant_antoni" value="encants_sant_antoni">
+                                    <label class="custom-control-label" for="encants_sant_antoni">Encants de Sant Antoni</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="mercat[]" id="rambla" value="Rambla">
+                                    <label class="custom-control-label" for="rambla">Flors de la Rambla</label>
+                                </div>
+                            </div> 
+                        </div>
+                        
+                        <div class="boton">
+                            <div class="form-group row">
+                                <button type="submit" class="btn btn-dark">Aceptar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+   
+    </footer>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</html>
