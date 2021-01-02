@@ -33,8 +33,8 @@ JUEGO 3 -->
 Mucho texto
 Explicar que son los mensajes
 Explicacion del juego
-Etiqueta de quien es Rosa
-Botón start que se le pueda dar click
+Etiqueta de quien es Rosa HECHOOOOOOOOOOOOOOOOOOO
+Botón start que se le pueda dar click HECHOOOOOOOOOOOOOOOOOOOOOOOO
 Movimiento diagonal
 Siguiente objetivo marcado fuera del contenedor o indicador para saber donde ir
 Dibujo de las teclas en la descipción inicial
