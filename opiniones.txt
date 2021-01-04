@@ -36,11 +36,11 @@ Explicacion del juego
 Etiqueta de quien es Rosa HECHOOOOOOOOOOOOOOOOOOO
 Botón start que se le pueda dar click HECHOOOOOOOOOOOOOOOOOOOOOOOO
 Movimiento diagonal
-Siguiente objetivo marcado fuera del contenedor o indicador para saber donde ir
-Dibujo de las teclas en la descipción inicial
-Mostrar mensaje CLiente 1 con la fila de la derecha incluido (-+10 px)
+Siguiente objetivo marcado fuera del contenedor o indicador para saber donde ir HECHOOOOOOOOOOOOOOOOOOOOOO
+Dibujo de las teclas en la descipción inicial HECHOOOOOOOOOOOOOOOOOOOO
+Mostrar mensaje CLiente 1 con la fila de la derecha incluido (-+10 px) HECHOOOOOOOOOOOOOOOOOO
 Personaje muy pequeño
-Boton ultimo mensaje mas visible
+Boton ultimo mensaje mas visible HECHOOOOOOOOOOOOOOOOOOO
 Porton que sean puerta automaticas y buscar tarjeta de acceso para abrirla
 ------------------------------------------------------------------------------------------------
 JUEGO 4 --> 
