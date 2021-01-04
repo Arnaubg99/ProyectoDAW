@@ -30,9 +30,9 @@ Necesita mensaje diciendo como se juega, decir para que se juega, en plan conseg
 Boton de reiniciar
 -------------------------------------------------------------------------------------------------
 JUEGO 3 --> 
-Mucho texto
+Mucho texto HECHOOOOOOOOOOOOO
 Explicar que son los mensajes
-Explicacion del juego
+Explicacion del juego HECHOOOOOOOOOOOOOO
 Etiqueta de quien es Rosa HECHOOOOOOOOOOOOOOOOOOO
 Botón start que se le pueda dar click HECHOOOOOOOOOOOOOOOOOOOOOOOO
 Movimiento diagonal
