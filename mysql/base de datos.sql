@@ -21,7 +21,7 @@ foreign key (id_usuario) references usuarios(id_usuario) on update cascade on de
 
 create table mercados (
 id_mercado integer(2) primary key auto_increment unique,
-nombre varchar(15) not null,
+nombre varchar(50) not null,
 url varchar(100) not null
 );
 
