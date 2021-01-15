@@ -11,18 +11,12 @@ puntos integer(10),
 administrador boolean not null
 );
 
-create table puntuacion (
-id_usuario integer(10) primary key,
-fecha_ultima_conexion date, 
-puntos_diarios integer(10),
-puntos_maximos integer(10),
-foreign key (id_usuario) references usuarios(id_usuario) on update cascade on delete cascade 
-);
 
 create table mercados (
 id_mercado integer(2) primary key auto_increment unique,
 nombre varchar(50) not null,
-url varchar(100) not null
+url varchar(100) not null,
+mercado_alimentario boolean not null
 );
 
 create table ofertas (
