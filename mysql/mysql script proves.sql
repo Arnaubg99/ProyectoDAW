@@ -1,7 +1,7 @@
 select * from ofertas;
 select * from usuarios;
 select * from mercados;
-select * from mercados_has_ofertas;
+
 select * from usuario_has_mercados;
 select * from usuario_has_ofertas;
 
@@ -50,18 +50,17 @@ insert into mercados (nombre, url, mercado_alimentario) values ("Encants de Sant
 insert into mercados (nombre, url, mercado_alimentario) values ("Encants Barcelona - Fira de Bellcaire", "https://encantsbarcelona.com/es/", 0);
 insert into mercados (nombre, url, mercado_alimentario) values ("Flors de la Rambla", "https://ajuntament.barcelona.cat/mercats/ca/content/flors-de-la-rambla-1", 0);
 
-insert into ofertas (tipo_negocio, coste_puntos, descripcion) values ('fruites', 35 ,'oferta');
-insert into ofertas (tipo_negocio, coste_puntos, descripcion) values ('verdures', 66 ,'oferta2');
-insert into ofertas (tipo_negocio, coste_puntos, descripcion) values ('carn', 70 ,'oferta3');
-insert into ofertas (tipo_negocio, coste_puntos, descripcion) values ('fruits secs', 22 ,'oferta4');
+insert into ofertas (tipo_negocio, coste_puntos, descripcion, id_mercado) values ('fruites', 35 ,'oferta', 1);
+insert into ofertas (tipo_negocio, coste_puntos, descripcion, id_mercado) values ('verdures', 66 ,'oferta2', 1);
+insert into ofertas (tipo_negocio, coste_puntos, descripcion, id_mercado) values ('carn', 70 ,'oferta3', 2);
+insert into ofertas (tipo_negocio, coste_puntos, descripcion, id_mercado) values ('fruits secs', 22 ,'oferta4', 2);
 
-insert into mercados_has_ofertas (id_mercado, id_oferta) values (1,1);
-insert into mercados_has_ofertas (id_mercado, id_oferta) values (1,2);
-insert into mercados_has_ofertas (id_mercado, id_oferta) values (2,3);
-insert into mercados_has_ofertas (id_mercado, id_oferta) values (2,4);
 
 insert into usuarios (nombre, contrasena, correo, puntos, administrador) values ('arnau', 'asdf', 'asdf@gmail.com', 50000, 1);
-insert into usuario_has_mercados (id_usuario, id_mercado) values (1, 7);
+insert into usuario_has_mercados (id_usuario, id_mercado) values (1, 2);
+delete from usuario_has_ofertas where id_usuario = 1;
+
+
 
 
 
