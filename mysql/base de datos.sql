@@ -23,15 +23,9 @@ create table ofertas (
 id_oferta integer(5) primary key auto_increment unique,
 tipo_negocio varchar(50) not null,
 coste_puntos integer(10) not null,
-descripcion varchar(150) not null
-);
-
-create table mercados_has_ofertas (
-id_mercado integer(2),
-id_oferta integer(5),
-foreign key(id_mercado) references mercados(id_mercado) on update no action on delete cascade,
-foreign key(id_oferta) references ofertas(id_oferta) on update no action on delete cascade,
-primary key (id_mercado, id_oferta)
+descripcion varchar(150) not null,
+id_mercado integer(2) not null,
+foreign key(id_mercado) references mercados(id_mercado) on update no action on delete cascade
 );
 
 create table usuario_has_mercados (
@@ -49,4 +43,3 @@ foreign key(id_usuario) references usuarios(id_usuario) on update no action on d
 foreign key(id_oferta) references ofertas(id_oferta) on update no action on delete cascade,
 primary key (id_usuario, id_oferta)
 );
-
